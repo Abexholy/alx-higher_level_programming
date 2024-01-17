@@ -43,5 +43,5 @@ listint_t *insert_node(listint_t **head, int number)
 		tonew->next = onew;
 		onew->next = rageing;
 	}
-	return ();
+	return (onew);
 }
