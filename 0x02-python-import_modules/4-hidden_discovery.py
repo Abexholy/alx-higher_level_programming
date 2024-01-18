@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-if __name__ == "__main":
+if __name__ == "__main__":
     from hidden_4 import *
     mmyf = dir()
     for i in range(0, len(mmyf)):
