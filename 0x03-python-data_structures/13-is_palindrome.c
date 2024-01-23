@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 #include <stdio.h>
 
 void reversal(listint_t **head);
@@ -11,13 +11,14 @@ int comp_list(listint_t *head, listint_t *middle, int len);
  *
  * Return: 0 if palidrome is not detected and 1 if palidrome is
  */
-int is_palindrome(listint_t **head);
+
+int is_palindrome(listint_t **head)
 {
 	int lan, j;
 	listint_t *tmp;
 	listint_t *middle;
 
-	if (head == NULL || *head == NULL
+	if (head == NULL || *head == NULL)
 		return (1);
 	tmp = *head;
 	middle = *head;
@@ -30,25 +31,25 @@ int is_palindrome(listint_t **head);
 	for (j = 1; j < lan; j++)
 		middle = middle->next;
 	if (lan % 2 != 0 && lan != 1)
-	(
+	{
 	 	middle = middle->next;
 		lan = lan - 1;
-	)
-	reverse(middle);
-	j = compare_lists(*head, middle, lan);
+	}
+	reversal(&middle);
+	j = comp_list(*head, middle, lan);
 
-	return (j)
+	return (j);
 }
 
 /**
  * @middle: pointer to middle3 node
  * @lan: lenght of the list
- * compare_lists - compare two lists
+ * comp_list - compare two lists
  * @head: pointer to head node
  * Return: return 1 if it is the sum return 0 if not sum
  *
  */
-int comp_list(listint_t *head, listint_t *middle, int len)
+int comp_list(listint_t *head, listint_t *middle, int lan)
 {
 	int j;
 
@@ -65,7 +66,7 @@ int comp_list(listint_t *head, listint_t *middle, int len)
 }
 
 /**
- * reverse - reverse a list
+ * reversal - reverse a list
  * @head: it is a pointer to the head been reversed
  */
 void reversal(listint_t **head)
