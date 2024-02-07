@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 def magic_calculation(a, b):
     answ = 0
     for j in range(1, 3):
@@ -10,4 +11,4 @@ def magic_calculation(a, b):
         except Exception:
             result = b + a
             break
-    return (answ)
+    return answ
