@@ -3,10 +3,11 @@
 
 
 class BaseGeometry:
-    """The Geometry Shapes """
+    """The Geometry Shapes"""
 
     def area(self):
-        """Defines the area of a geomtric shape """
+        """Defines the area of a geomtric shape"""
+
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
