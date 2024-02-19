@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 class MyInt(int):
-    """Class  from class int"""
+    """ Class that inherits from class int"""
 
     def __eq__(self, other):
-        """Operator to check behavior in checks"""
+        """ Method that returns != check """
         return int.__ne__(self, other)
 
     def __ne__(self, other):
-        """Operartor with the == check"""
+        """ Method that returns == check """
         return int.__eq__(self, other)
