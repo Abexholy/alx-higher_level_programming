@@ -2,7 +2,6 @@
 """Defines class inherited function"""
 
 
-
 def is_kind_of_class(obj, a_class):
     """Function that checks if obj is same as the instance of a_class
 

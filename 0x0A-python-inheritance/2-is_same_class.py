@@ -2,7 +2,6 @@
 """Defines a class Function"""
 
 
-
 def is_same_class(obj, a_class):
     """Ensure same class and obj is a type of a_class
 

@@ -2,7 +2,6 @@
 """This DEfines a class BaseGeometry"""
 
 
-
 class BaseGeometry:
     """This is the baase geometry"""
 

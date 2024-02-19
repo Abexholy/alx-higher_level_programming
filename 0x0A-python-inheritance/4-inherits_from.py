@@ -2,7 +2,6 @@
 """This defines an inherited function"""
 
 
-
 def inherits_from(obj, a_class):
     """Function that checks if obj is same as an instance of a_class
 
