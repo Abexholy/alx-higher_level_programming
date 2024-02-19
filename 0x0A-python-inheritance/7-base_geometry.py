@@ -14,10 +14,8 @@ class BaseGeometry:
 
         Árgs:
             name (str): name of the object or parameter
-            value (int): value to validate
-
+            value (int): value to validate.
         """
-
         if type(value) != int:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
